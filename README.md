@@ -79,6 +79,9 @@ sh nexus status
 ip:8081
 ```
 ## Before-changes
+# Jenkins integration with ansible-master Server
+#Goto Manage Jenkins---->Configure System---->SSH Servers
+![ansible-Jenkins](https://user-images.githubusercontent.com/111736742/220753163-d50179b8-3da8-4219-afa1-20d82c5c0228.png)
 #In index.html
 ![ansiblebefore-change](https://user-images.githubusercontent.com/111736742/220749101-df46c3a9-fc91-4fc2-a2c7-8cb86558ceee.png)
 #JenkinsDashboard
