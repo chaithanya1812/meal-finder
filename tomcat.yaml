@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: TomcatServers
   become: true
   tasks:
    - yum:
