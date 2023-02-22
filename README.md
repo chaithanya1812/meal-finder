@@ -56,5 +56,27 @@ su - chaitu
 cd /opt/sonarqube/bin/linux-x86-64
 sh sonar.sh start
 sh sonar.sh status
+ip:9000
+```
+
+## Nexus Download & Installation
+```bash
+yum install java-1.8* -y
+cd /opt
+wget https://download.sonatype.com/nexus/3/nexus-3.47.1-01-unix.tar.gz
+tar -xvzf  nexus-3.47.1-01-unix.tar.gz
+mv nexus-3.47.1-01 nexus
+useradd chaitu
+passwd chaitu
+chown -R chaitu:chaitu nexus
+chown -R chaitu:chaitu sonatype-work
+cd /opt/nexus/bin
+vi nexus.rc
+--------edit---------
+#run_as_user="chaitu"
+----------edit--------
+sh nexus start
+sh nexus status
+ip:8081
 ```
 
