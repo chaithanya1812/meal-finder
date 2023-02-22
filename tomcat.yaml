@@ -25,7 +25,7 @@
       src: tomcat-users.xml
       dest: /opt/apache-tomcat-9.0.71/conf/tomcat-users.xml
    - copy:
-       src: meal-finder.war
+       src: promocode.war
        dest: /opt/apache-tomcat-9.0.71/webapps
    - shell: nohup ./startup.sh
      args:
