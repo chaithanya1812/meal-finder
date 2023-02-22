@@ -1,6 +1,7 @@
 ## Jenkins-Ansible-Apache Tomcat
 ## Image
-![project-1](https://user-images.githubusercontent.com/111736742/220655568-ffe52c02-8dd5-4ac5-8af1-b7cf66661e73.jpg)
+![ansible-1](https://user-images.githubusercontent.com/111736742/220746641-259b683e-84d4-49db-90d7-964c61aa90ea.jpg)
+
 ## Ansible-Installation
 ```bash
 wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -79,4 +80,6 @@ sh nexus start
 sh nexus status
 ip:8081
 ```
+## Before-changes
+
 
