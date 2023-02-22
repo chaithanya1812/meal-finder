@@ -27,6 +27,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <distributionManagement>
+
+        <repository>
+                <id>chaitu</id>
+                <name>samplerelease</name>
+                <url>http://52.66.211.52:8081/repository/meal-finderRelease/</url>
+        </repository>
+        <snapshotRepository>
+                <id>chaitu</id>
+                <name>samplesnapshot</name>
+                <url>http://52.66.211.52:8081/repository/meal-finderSnapshot/</url>
+        </snapshotRepository>
+
+  </distributionManagement>
 
   <build>
     <finalName>meal-finder</finalName>
