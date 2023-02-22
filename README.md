@@ -10,8 +10,7 @@ yum update -y
 yum install git python python-devel python-pip openssl ansible -y
 ansible --version
 ```
-![ansible-1server](https://user-images.githubusercontent.com/111736742/220700977-12fd2b7d-0761-428c-bce3-15a07abe17b0.png)
-
+![ansibleproject](https://user-images.githubusercontent.com/111736742/220749486-3f453b52-0d4a-4813-b72b-9383418dd447.png)
 ## Ansible-Node Configuration
 ```bash
 cd /etc/ansible
@@ -32,8 +31,7 @@ sudo vi hosts
 ![ansible-2-node](https://user-images.githubusercontent.com/111736742/220701143-27305434-f8f4-456c-9785-747bcd145251.png)
 ## To check connectvity between ansible-master & nodes
 ![ansible-ping](https://user-images.githubusercontent.com/111736742/220707106-fb8979ff-bb1e-46ad-9e5c-0289020f0bb3.png)
-## copy this [1.context.xml  2.tomcat-users.xml  3.tomcat.yaml]  content into ansible home directory.
-
+## copy this [1.context.xml  2.tomcat-users.xml  3.tomcat.yaml]  content into ansible-master home directory.
 #which is there in github-repository.
 ![ansible-copy-content](https://user-images.githubusercontent.com/111736742/220710173-b34ffe15-d10c-4fcd-80b7-8f2b27a39538.png)
 
@@ -81,5 +79,21 @@ sh nexus status
 ip:8081
 ```
 ## Before-changes
+#In index.html
+![ansiblebefore-change](https://user-images.githubusercontent.com/111736742/220749101-df46c3a9-fc91-4fc2-a2c7-8cb86558ceee.png)
+#JenkinsDashboard
+![ansiblejenkins](https://user-images.githubusercontent.com/111736742/220748733-f4ddfa38-588d-4a6f-b967-5391cd355d3a.png)
+#Nexus-Artifact
+![ansible-nexus](https://user-images.githubusercontent.com/111736742/220749652-cd25e94c-18a8-48b7-bb8b-9581c94c51dc.png)
+#Apache-Tomcat-Srever
+![ansible-output1](https://user-images.githubusercontent.com/111736742/220749770-6188a933-88b5-460f-b084-93eaf462705b.png)
+## After Changes
+#index.html
+![ansiblefinalchanhe](https://user-images.githubusercontent.com/111736742/220750089-192777ad-7d6d-4f2a-a855-4b55d0cb9d8f.png)
+#Apache-Tomcat-Server
+![ansiblefinal](https://user-images.githubusercontent.com/111736742/220750225-57abba7a-9afa-4484-845c-8d0f7d8e23a2.png)
+
+
+
 
 
