@@ -31,4 +31,30 @@ sudo vi hosts
 ![ansible-2-node](https://user-images.githubusercontent.com/111736742/220701143-27305434-f8f4-456c-9785-747bcd145251.png)
 ## To check connectvity between ansible-master & nodes
 ![ansible-ping](https://user-images.githubusercontent.com/111736742/220707106-fb8979ff-bb1e-46ad-9e5c-0289020f0bb3.png)
+## copy this [1.context.xml  2.tomcat-users.xml  3.tomcat.yaml]  content into ansible home directory.
+
+#which is there in github-repository.
+![ansible-copy-content](https://user-images.githubusercontent.com/111736742/220710173-b34ffe15-d10c-4fcd-80b7-8f2b27a39538.png)
+
+## SonarQube Download & Installation
+```bash
+cd /opt
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.10.61524.zip
+unzip sonarqube-8.9.10.61524.zip
+mv sonarqube-8.9.10.61524 sonarqube
+useradd chaitu
+passwd chaitu
+chown -R chaitu:chaitu sonarqube
+cd /opt/sonarqube/bin/linux-x86-64
+vi sonar.sh 
+--------------
+edit this
+#RUN_AS_USER=
+RUN_AS_USER=chaitu
+su - chaitu
+[And start SonarQube]
+cd /opt/sonarqube/bin/linux-x86-64
+sh sonar.sh start
+sh sonar.sh status
+```
 
